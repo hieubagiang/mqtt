@@ -1,5 +1,5 @@
 const mqtt = require("mqtt");
-const client = mqtt.connect('mqtt://127.0.0.1:1883');
+const client = mqtt.connect('mqtt://mqtt-aedes.herokuapp.com:1883');
 var topic = 'led';
 var message = '';
 
