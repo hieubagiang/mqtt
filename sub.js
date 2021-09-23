@@ -1,6 +1,6 @@
 const mqtt = require("mqtt");
-const client = mqtt.connect('mqtt://mqtt-aedes.herokuapp.com:1883');
-var topic = 'led';
+const client = mqtt.connect('mqtt://broker.hivemq.com:1883');
+var topic = 'led123';
 var message = '';
 
 client.on("connect", () => {
