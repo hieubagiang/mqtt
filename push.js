@@ -1,6 +1,6 @@
 const mqtt = require("mqtt");
-const client = mqtt.connect('ws://mqtt-aedes.herokuapp.com:1883');
-var topic = 'led'
+const client = mqtt.connect('mqtt://127.0.0.1:1883');
+var topic = 'led123'
 var message = 'Hello World!'
 
 client.on("connect", () => {
@@ -11,7 +11,7 @@ client.on("connect", () => {
         if (!err) {
             setInterval(()=>{
                 client.publish(topic, message)
-                console.log('Message sent!', message)
+                console.log('Message sent after 5sec!', message)
             }, 5000)
         }
     });
