@@ -1,5 +1,5 @@
 const mqtt = require("mqtt");
-const client = mqtt.connect('mqtt://127.0.0.1:1883');
+const client = mqtt.connect('ws://127.0.0.1');
 var topic = 'led123'
 var message = 'Hello World!'
 
